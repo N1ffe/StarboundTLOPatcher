@@ -6,7 +6,7 @@
         {
             try
             {
-                string patchData = await File.ReadAllTextAsync(Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "patch.json"));
+                string patchData = await File.ReadAllTextAsync(Path.Combine(Environment.CurrentDirectory, "patch.json"));
                 string[] objects = Directory.GetFiles(modPath, "*.object", SearchOption.AllDirectories);
                 int count = 0;
 
@@ -63,6 +63,7 @@
                         return true;
                     }
                 }
+
                 return false;
             }
         }
