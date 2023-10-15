@@ -3,7 +3,11 @@
 StarboundTLOPatcher is a program designed specifically for automating the process of creating patches for [Tanz Lighting Overhaul](https://steamcommunity.com/sharedfiles/filedetails/?id=729467376) mod.
 
 ### How to use
-Launch the compiled .exe file (.exe and .dll can be found in the Releases tab) from command line (command prompt) and specify 2 parameters:
+#### If using the source code
+Move or copy patch.json file to the binaries folder, and then you can compile the project by yourself.
+#### If using the compiled program
+Download .json, .dll, .exe, .runtimeconfig.json files (can be found in the Releases tab) and save them in the same folder.
+Launch the .exe file from command line (command prompt) and specify 2 parameters:
 1. Full path to the target mod **object** folder
 2. Full path to your mod folder
 
